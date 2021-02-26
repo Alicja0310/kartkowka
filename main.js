@@ -19,3 +19,11 @@ arr.find((item, index)=> {
         console.log(indexJan)
     }
 })
+
+const numery =  new Array()
+numery.push(1, 15, 150, 1500, 5525)
+console.log(numery)
+
+const imiona = new Array()
+imiona.push("Jan", "Henryk")
+console.log(imiona)
