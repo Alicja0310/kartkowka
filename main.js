@@ -16,14 +16,40 @@ let indexJan
 arr.find((item, index)=> {
     if(item === "Jan") {
         indexJan = index
-        console.log(indexJan)
+    }
+})
+console.log(indexJan)
+
+
+// const numery =  new Array()
+// numery.push(1, 15, 150, 1500, 5525)
+// console.log(numery)
+
+// const imiona = new Array()
+// imiona.push("Jan", "Henryk")
+// console.log(imiona)
+
+
+let num = []
+let name = new Array()
+
+arr.forEach(item => {
+    if(typeof item === Number) {
+        Number.push(item)
+    }
+    else{
+        name.push(item)
     }
 })
 
-const numery =  new Array()
-numery.push(1, 15, 150, 1500, 5525)
-console.log(numery)
 
-const imiona = new Array()
-imiona.push("Jan", "Henryk")
-console.log(imiona)
+
+const obj = {
+    name: "Jan",
+    age: 12
+}
+
+console.log(obj.name)
+
+const arrWithObj = [obj]
+console.log(arrWithObj[0].name)
